@@ -12,6 +12,8 @@ pub fn add(F: type, a: F, b: F, comptime mode: round_mode.RoundMode) F {
 
 fn add_nearest(F: type, a: F, b: F) F {
     // only currently supported rounding mode from the compiler (<= 0.14)
+
+    @setFloatMode(.strict);
     return a + b;
 }
 

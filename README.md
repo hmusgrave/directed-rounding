@@ -8,4 +8,4 @@ On many platforms (WASM, embedded, ...), either the hardware doesn't provide acc
 
 ## Status
 
-I just started. Both addition and subtraction are flawless for all native Zig float types. I plan to implement the remaining operations required for RandomX within a few days or weeks.
+I just started. Addition, subtraction, and square roots are flawless for all native Zig float types. I plan to implement the remaining operations required for RandomX within a few days or weeks.

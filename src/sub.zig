@@ -4,6 +4,7 @@ const add = @import("add.zig");
 const round_mode = @import("round_mode.zig");
 
 pub fn sub(F: type, a: F, b: F, comptime mode: round_mode.RoundMode) F {
+    @setFloatMode(.strict);
     return add.add(F, a, -b, mode);
 }
 
